@@ -1,15 +1,15 @@
 import express from "express"
+import communityRouter from "./routers/communityRouter";
+import globalRouter from "./routers/globalRouter";
+import jobRouter from "./routers/jobRouter";
+import routes from "./routes";
 
 const app = express()
 
-const globalRouter = (req, res) => res.send("Hi Sangdami :)");
-const supervisionRouter = (req, res) => res.send("Supervision Recommend!");
-const jobRouter = (req, res) => res.send("Job review!");
-const communityRouter = (req, res) => res.send("Community!")
+app.set("view engine", "pug")
 
-app.get("/", globalRouter)
-app.get("/supervision", supervisionRouter)
-app.get("/job", jobRouter)
-app.get("/community", communityRouter)
+app.use(routes.home, globalRouter)
+app.use(routes.community, communityRouter)
+app.use(routes.job, jobRouter)
 
 export default app;
