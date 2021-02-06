@@ -1,0 +1,14 @@
+
+.header__user
+    if (!user.isAuthenticated)  
+        .header__user-login
+            a(href="/login") 로그인
+
+        .header__join
+            a(href="/Join") 회원가입
+    else 
+        .header__user-login
+            a(href="/profile") 마이페이지
+
+        .header__logout
+            a(href="/logout") 로그아웃

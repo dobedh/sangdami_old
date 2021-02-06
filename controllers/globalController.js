@@ -1,3 +1,12 @@
 export const home = (req, res) => res.render("home")
 
-export const login = (req, res) => res.render("login")
+
+// Login
+export const getLogin = (req, res) => res.render("login")
+
+export const postLogin = (req, res) => {
+    const {
+        body : {email, password}
+    } = req;
+    res.redirect(routes.home)
+}
