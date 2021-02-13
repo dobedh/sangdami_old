@@ -5,6 +5,7 @@ const HOME = "/";
 const USERS = "/user"
 const LOGIN = "/login";
 const LOGOUT = "/logout"
+const JOIN = "/join"
 
 //community
 const SUPERVISION = "/supervision"
@@ -17,6 +18,7 @@ const routes = {
     home : HOME,
     users : USERS,
     login : LOGIN,
+    join : JOIN,
     logout : LOGOUT,
     supervision : SUPERVISION,
     community : COMMUNITY,

@@ -1,0 +1,11 @@
+extends ./layouts/main
+
+block content
+    .form__join
+        form(action=routes.home, method="post").form__join-input
+            input(type="text", placeholder="Name", name="name", requried=true)
+            input(type="email", placeholder="Email", name="email", requried=true)
+            input(type="password", placeholder="Password", name="password", required=true)
+            input(type="password", placeholder="Confirm Password", name="password2", required=true)
+            input(type="submit", value="가입하기")   
+        include ./partials/socialLogin
