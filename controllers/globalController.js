@@ -1,4 +1,5 @@
 import User from "../models/User"
+import routes from "../routes"
 
 export const home = (req, res) => res.render("home")
 

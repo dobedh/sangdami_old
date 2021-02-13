@@ -2,7 +2,7 @@ extends ./layouts/main
 
 block content
     .form__join
-        form(action=routes.home, method="post").form__join-input
+        form(action=routes.join, method="post").form__join-input
             input(type="text", placeholder="Name", name="name", requried=true)
             input(type="email", placeholder="Email", name="email", requried=true)
             input(type="password", placeholder="Password", name="password", required=true)
