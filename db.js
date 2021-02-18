@@ -7,7 +7,7 @@ mongoose.connect(
     process.env.MONGO_URL,
     {
         useNewUrlParser : true,
-        userFindAndModify : false,
+        useFindAndModify: false,
         useUnifiedTopology: true,
     }
 );

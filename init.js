@@ -1,10 +1,12 @@
-import app from "./app";
-import "./db"
 import dotenv from "dotenv";
+import app from "./app";
+import passport from "passport"
+
 dotenv.config();
+
+import "./db"
 import "./models/Community";
 import "./models/User"
-import passport from "passport"
 
 const PORT = process.env.PORT || 9000;
 
