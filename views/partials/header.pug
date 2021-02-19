@@ -1,6 +1,6 @@
 
 .header__user
-    if (!user.isAuthenticated)  
+    if !user  
         .header__user-login
             a(href="/login") 로그인
 
@@ -11,4 +11,4 @@
             a(href="/profile") 마이페이지
 
         .header__logout
-            a(href="/logout") 로그아웃
+            a(href=routes.logout) 로그아웃

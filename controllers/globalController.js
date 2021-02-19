@@ -40,3 +40,9 @@ export const postJoin = async (req, res, next) => {
       }
     }
   };
+
+
+export const logout = (req, res) => {
+  req.user = null
+  res.redirect(routes.home)
+}
