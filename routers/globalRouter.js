@@ -1,5 +1,5 @@
 import express from "express";
-import { home, getLogin, postLogin, getJoin, postJoin, logout } from "../controllers/globalController";
+import { home, getLogin, postLogin, getJoin, postJoin, logout, profile } from "../controllers/globalController";
 import routes from "../routes";
 
 const globalRouter = express.Router();
@@ -18,5 +18,8 @@ globalRouter.post(routes.join, postJoin)
 
 //logout
 globalRouter.get(routes.logout, logout)
+
+//profile
+globalRouter.get(routes.profile, profile)
 
 export default globalRouter;

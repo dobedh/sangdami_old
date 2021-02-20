@@ -1,3 +1,5 @@
+import dotenv from "dotenv";
+dotenv.config();
 import express from "express";
 import morgan from "morgan";
 import helmet from "helmet";
@@ -7,14 +9,11 @@ import passport from "passport";
 import session from "express-session";
 import MongoStore from "connect-mongo";
 import mongoose from "mongoose";
-import dotenv from "dotenv"
 import routes from "./routes";
 import globalRouter from "./routers/globalRouter";
 import communityRouter from "./routers/communityRouter";
 import jobRouter from "./routers/jobRouter";
 import { localMiddleware }  from "./localMiddleware";
-
-dotenv.config()
 
 import "./passport";
 
@@ -24,6 +23,8 @@ const CookieStore = MongoStore(session);
 // Middlewares
 app.use(helmet())
 app.set("view engine", "pug")
+app.use("/static", express.static("static"));
+app.use("/uploads", express.static("uploads"));
 app.use(cookieParser())
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended : true}))

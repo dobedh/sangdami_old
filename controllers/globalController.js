@@ -18,7 +18,6 @@ export const getJoin = (req, res) => {
     res.render("join")
 }
 
-
 export const postJoin = async (req, res, next) => {
     const {
       body: { name, email, password, password2 },
@@ -42,7 +41,18 @@ export const postJoin = async (req, res, next) => {
   };
 
 
+export const kakaoLoginCallback = (accessToken, refreshToken, profile, done) => {
+  console.log(accessToken, refreshToken, profile, done)
+};
+
+// logout
 export const logout = (req, res) => {
-  req.user = null
-  res.redirect(routes.home)
+  req.logout();
+  res.redirect(routes.home);
+}
+
+//profile
+export const profile = (req, res) => {
+  const user = req.user
+  res.render("profile", {userName : user.name, userEmail : user.email})
 }

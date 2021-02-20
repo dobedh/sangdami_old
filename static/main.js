@@ -16,7 +16,7 @@
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/styles.scss */ \"./assets/scss/styles.scss\");\n/* harmony import */ var _scss_styles_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_scss_styles_scss__WEBPACK_IMPORTED_MODULE_0__);\nfunction asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }\n\nfunction _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err); } _next(undefined); }); }; }\n\n\n\nvar something = /*#__PURE__*/function () {\n  var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {\n    return regeneratorRuntime.wrap(function _callee$(_context) {\n      while (1) {\n        switch (_context.prev = _context.next) {\n          case 0:\n            console.log(\"something\");\n\n          case 1:\n          case \"end\":\n            return _context.stop();\n        }\n      }\n    }, _callee);\n  }));\n\n  return function something() {\n    return _ref.apply(this, arguments);\n  };\n}();\n\n//# sourceURL=webpack://sangdami/./assets/js/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/styles.scss */ \"./assets/scss/styles.scss\");\nfunction asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }\n\nfunction _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err); } _next(undefined); }); }; }\n\n\n\nvar something = /*#__PURE__*/function () {\n  var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {\n    return regeneratorRuntime.wrap(function _callee$(_context) {\n      while (1) {\n        switch (_context.prev = _context.next) {\n          case 0:\n            console.log(\"something\");\n\n          case 1:\n          case \"end\":\n            return _context.stop();\n        }\n      }\n    }, _callee);\n  }));\n\n  return function something() {\n    return _ref.apply(this, arguments);\n  };\n}();\n\n//# sourceURL=webpack://sangdami/./assets/js/main.js?");
 
 /***/ }),
 
@@ -3184,9 +3184,10 @@ eval("/**\n * Copyright (c) 2014-present, Facebook, Inc.\n *\n * This source cod
 /*!*********************************!*\
   !*** ./assets/scss/styles.scss ***!
   \*********************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("throw new Error(\"Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\\nModuleError: Module Error (from ./node_modules/sass-loader/dist/cjs.js):\\nCannot find module 'sass'\\nRequire stack:\\n- C:\\\\Users\\\\User\\\\dev\\\\sangdami\\\\node_modules\\\\sass-loader\\\\dist\\\\utils.js\\n- C:\\\\Users\\\\User\\\\dev\\\\sangdami\\\\node_modules\\\\sass-loader\\\\dist\\\\index.js\\n- C:\\\\Users\\\\User\\\\dev\\\\sangdami\\\\node_modules\\\\sass-loader\\\\dist\\\\cjs.js\\n- C:\\\\Users\\\\User\\\\dev\\\\sangdami\\\\node_modules\\\\loader-runner\\\\lib\\\\loadLoader.js\\n- C:\\\\Users\\\\User\\\\dev\\\\sangdami\\\\node_modules\\\\loader-runner\\\\lib\\\\LoaderRunner.js\\n- C:\\\\Users\\\\User\\\\dev\\\\sangdami\\\\node_modules\\\\webpack\\\\lib\\\\NormalModule.js\\n- C:\\\\Users\\\\User\\\\dev\\\\sangdami\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js\\n- C:\\\\Users\\\\User\\\\dev\\\\sangdami\\\\node_modules\\\\webpack\\\\lib\\\\Compiler.js\\n- C:\\\\Users\\\\User\\\\dev\\\\sangdami\\\\node_modules\\\\webpack\\\\lib\\\\webpack.js\\n- C:\\\\Users\\\\User\\\\dev\\\\sangdami\\\\node_modules\\\\webpack\\\\lib\\\\index.js\\n- C:\\\\Users\\\\User\\\\dev\\\\sangdami\\\\node_modules\\\\webpack-cli\\\\lib\\\\webpack-cli.js\\n- C:\\\\Users\\\\User\\\\dev\\\\sangdami\\\\node_modules\\\\webpack-cli\\\\lib\\\\bootstrap.js\\n- C:\\\\Users\\\\User\\\\dev\\\\sangdami\\\\node_modules\\\\webpack-cli\\\\bin\\\\cli.js\\n- C:\\\\Users\\\\User\\\\dev\\\\sangdami\\\\node_modules\\\\webpack\\\\bin\\\\webpack.js\\n    at Object.emitError (C:\\\\Users\\\\User\\\\dev\\\\sangdami\\\\node_modules\\\\webpack\\\\lib\\\\NormalModule.js:448:6)\\n    at getSassImplementation (C:\\\\Users\\\\User\\\\dev\\\\sangdami\\\\node_modules\\\\sass-loader\\\\dist\\\\utils.js:55:21)\\n    at Object.loader (C:\\\\Users\\\\User\\\\dev\\\\sangdami\\\\node_modules\\\\sass-loader\\\\dist\\\\index.js:27:59)\");\n\n//# sourceURL=webpack://sangdami/./assets/scss/styles.scss?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://sangdami/./assets/scss/styles.scss?");
 
 /***/ })
 
@@ -3216,35 +3217,6 @@ eval("throw new Error(\"Module build failed (from ./node_modules/mini-css-extrac
 /******/ 	}
 /******/ 	
 /************************************************************************/
-/******/ 	/* webpack/runtime/compat get default export */
-/******/ 	(() => {
-/******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = (module) => {
-/******/ 			var getter = module && module.__esModule ?
-/******/ 				() => (module['default']) :
-/******/ 				() => (module);
-/******/ 			__webpack_require__.d(getter, { a: getter });
-/******/ 			return getter;
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/define property getters */
-/******/ 	(() => {
-/******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = (exports, definition) => {
-/******/ 			for(var key in definition) {
-/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-/******/ 				}
-/******/ 			}
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	(() => {
-/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports

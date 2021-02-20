@@ -6,6 +6,7 @@ const USERS = "/user"
 const LOGIN = "/login";
 const LOGOUT = "/logout"
 const JOIN = "/join"
+const PROFILE = "/profile"
 
 //community
 const SUPERVISION = "/supervision"
@@ -20,6 +21,7 @@ const routes = {
     login : LOGIN,
     join : JOIN,
     logout : LOGOUT,
+    profile : PROFILE,
     supervision : SUPERVISION,
     community : COMMUNITY,
     job : JOB
