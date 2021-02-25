@@ -56,3 +56,6 @@ export const profile = (req, res) => {
   const user = req.user
   res.render("profile", {userName : user.name, userEmail : user.email})
 }
+
+
+//kakao Login

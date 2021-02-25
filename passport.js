@@ -7,12 +7,17 @@ import { kakaoLoginCallback } from "./controllers/globalController";
 
 passport.use(User.createStrategy());
 
-passport.use(new KakaoStrategy({
-    clientID : process.env.KAKAO_ID,
-    callbackURL : "https://loacalhost:9000/oauth"
-  },
-  kakaoLoginCallback
-))
+passport.use(new FacebookStrategy({
+  clientID: FACEBOOK_APP_ID,
+  clientSecret: FACEBOOK_APP_SECRET,
+  callbackURL: "http://localhost:3000/auth/facebook/callback"
+},
+function(accessToken, refreshToken, profile, cb) {
+  User.findOrCreate({ facebookId: profile.id }, function (err, user) {
+    return cb(err, user);
+  });
+}
+));
 
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());

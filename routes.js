@@ -12,6 +12,10 @@ const PROFILE = "/profile"
 const SUPERVISION = "/supervision"
 const COMMUNITY = "/community"
 
+//facebook
+const FB = "/auth/facebook"
+const FB_CALLBACK = "/auth/facebook/callback"
+
 //job
 const JOB = "/job"
 
@@ -24,7 +28,9 @@ const routes = {
     profile : PROFILE,
     supervision : SUPERVISION,
     community : COMMUNITY,
-    job : JOB
+    job : JOB,
+    facebook : FB,
+    facebookCallback : FB_CALLBACK
 }
 
 export default routes;

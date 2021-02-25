@@ -1,5 +1,5 @@
 import express from "express";
-import { home, getLogin, postLogin, getJoin, postJoin, logout, profile } from "../controllers/globalController";
+import { home, getLogin, postLogin, getJoin, postJoin, logout, profile, kakaoLogin, kakaoCallback } from "../controllers/globalController";
 import routes from "../routes";
 
 const globalRouter = express.Router();
@@ -11,6 +11,12 @@ globalRouter.post(routes.home, home);
 // Login
 globalRouter.get(routes.login, getLogin);
 globalRouter.post(routes.login, postLogin)
+
+
+// Facebook
+globalRouter.get(routes.facebook, kakaoLogin)
+globalRouter.get(routes.facebookCallback, kakaoCallback)
+
 
 // Join
 globalRouter.get(routes.join, getJoin)
