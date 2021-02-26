@@ -58,4 +58,11 @@ export const profile = (req, res) => {
 }
 
 
-//kakao Login
+//facebook 
+export const facebookLogin = (req, res) => {
+  res.redirect(routes.home)
+}
+
+export const facebookLoginCallback = (req, res) => {
+  res.redirect(routes.home)
+}
