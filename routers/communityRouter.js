@@ -1,8 +1,11 @@
 import express from "express";
-import { contentList } from "../controllers/communityController";
+import routes from "../routes"
+import { contentList, newPost } from "../controllers/communityController";
 
 const communityRouter = express.Router()
 
 communityRouter.get("/", contentList)
 
-export default communityRouter
+communityRouter.get("/newpost", newPost)
+
+export default communityRouter  

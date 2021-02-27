@@ -11,6 +11,7 @@ const PROFILE = "/profile"
 //community
 const SUPERVISION = "/supervision"
 const COMMUNITY = "/community"
+const NEWPOST = "/community/newpost"
 
 //facebook
 const FB = "/auth/facebook"
@@ -28,6 +29,7 @@ const routes = {
     profile : PROFILE,
     supervision : SUPERVISION,
     community : COMMUNITY,
+    newPost : NEWPOST,
     job : JOB,
     facebook : FB,
     facebookCallback : FB_CALLBACK
