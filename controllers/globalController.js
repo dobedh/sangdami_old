@@ -2,8 +2,14 @@ import passport from "passport"
 import User from "../models/User"
 import routes from "../routes"
 
-export const home = (req, res) => res.render("home")
-
+export const home = async (req, res) => {
+try {
+  const communities = await Community.find({}).sort({ _id: -1 });
+  res.render("home", { pageTitle: "Home", communities });
+} catch (error) {
+  res.render("home", { pageTitle: "Home", communities });
+}
+}
 
 // Login
 export const getLogin = (req, res) => res.render("login")
